@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Pixel's Canteen</title>
+	</head>
+	<body>
+		<h2>WELCOME TO MY CANTEEN! HERE IS MY MENU:</h2>
+		<ul>
+			<li><b>Burger</b> - 50 PHP</li>
+			<li><b>Fries</b> - 40 PHP</li>
+			<li><b>Burger Steak</b> - 60 PHP</li>
+			<li><b>Fried Chicken</b> - 60 PHP</li>
+			<li><b>Spaghetti</b> - 55 PHP</li>
+		</ul>
+		
+		<form action="calculateOrder.php" method="POST">
+			Choose your order: 
+			<select name="foodSelectField">
+				<option value="burger">Burger</option>
+				<option value="fries">Fries</option>
+				<option value="burgerSteak">Burger Steak</option>
+				<option value="friedChicken">Fried Chicken</option>
+				<option value="spaghetti">Spaghetti</option>
+			</select> <br><br>
+			Quantity: <input type="text" name="quantityTextField"> <br><br>
+			Cash: <input type="text" name="cashTextField"> <br><br>
+			<input type="submit" value="ORDER!" name="orderButton">
+		</form>
+	</body>
+</html>
